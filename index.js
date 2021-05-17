@@ -14,7 +14,7 @@ const parseJson = express.json({ extended: false });
 const PORT = process.env.PORT || 4000;
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index1.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/paynow", [parseUrl, parseJson], (req, res) => {
